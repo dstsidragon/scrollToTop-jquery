@@ -1,0 +1,409 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+a{
+    text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 響應式設計*/
+img{
+        max-width:100%;
+        height:auto;
+}
+/*從這行以下開始*/
+
+
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.topbar{
+    height:30px;
+    background-color: #f6f6f6;
+    line-height: 30px;
+}
+
+.topbar ul{
+    float: right;
+} 
+.topbar li{
+    float: left;
+    text-align: center;
+    font-size: 14px; 
+    font-weight: bold;
+}
+.topbar  img{
+    vertical-align:middle;
+}
+.facebookIcon{
+    color:#667aad;
+    border-right: #cccccc solid 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.twitterIcon{
+    color:#3fb5ed;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.clearfix{
+    clear: both;
+}
+
+/*header*/
+.header{
+    position: relative;
+}
+
+.header-menu{
+    float: right;
+}
+.header-menu li{
+    float: left;
+    padding-left: 10px;
+    padding-right: 45px;
+}
+.header-menu a{
+    color:#00cc99;
+    font-size: 14px; 
+    font-weight: bold;
+    line-height: 50px;
+    padding-bottom: 15px;
+}
+.header-menu a:hover,a:active{
+    border-bottom:#00cc99 3px solid;
+}
+/*下拉選單*/
+.header-maim-menu{
+    z-index: 1000;
+    position: relative;
+}
+
+.header-maim-menu-list{
+    float: left;
+    position: absolute;
+    right: 240px;
+    display: none;
+}
+
+.header-maim-menu-list li{
+    text-align: center;
+    width: 70px;
+    float: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    background:fuchsia;
+
+}
+.header-maim-menu-list2{
+    float: left;
+    position: absolute;
+    right: 130px;
+    display: none;
+    
+}
+
+.header-maim-menu-list2 li{
+    text-align: center;
+    width: 70px;
+    float: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    background:blueviolet;
+}
+.header-maim-menu-list3{
+    float: left;
+    position: absolute;
+    right: 20px;
+    display: none;
+  
+}
+.header-maim-menu-list3 li{
+    text-align: center;
+    width: 70px;
+    float: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    background:orange;
+}
+.header-maim-menu a{
+    color: white;
+    font-size: 14px; 
+    font-weight: bold;
+    line-height: 50px;
+    padding-bottom: 15px;
+}
+.active{
+    color: red !important;
+    font-size: 18px !important;
+   
+}
+
+
+/*輪播設定*/
+.swiper-container {
+    /*改變輪播的大小*/
+width: 1000px;
+
+}
+.swiper-slide{
+    position: relative;
+}
+.header-position{
+    font-size: 30px;
+    color: white;
+    width: 920px;
+    padding:40px;
+    font-family: "微軟正黑體";
+    font-weight: bold;
+    line-height: 50px;
+    background:rgba(0,0,0,0.6);
+    position: absolute;
+    top:90px;
+}
+.red{
+    color:red;
+}
+.orange{
+    color:orange;
+}
+.yellow{
+    color:yellow;
+}
+.green{
+    color:#00fa9a;
+}
+.blue{
+    color:#00bfff;
+}
+.flash{
+    color: blue;
+}
+.purple{
+    color: purple;
+}
+.content{
+    margin-top: 50px;
+    max-width: 100%;
+}
+.content li{
+    
+    width: 28%;
+    margin-left:1%;
+    margin-right: 1%;
+    float: left;
+    border:#a9a9a9 solid 2px ;
+    text-align: center;
+    padding: 1%;
+}
+.content li p{
+    font-size: 16px;
+    font-family: "微軟正黑體";
+    line-height: 30px;
+}
+.content-s h2{
+    font-size: 20px;
+    font-family: "微軟正黑體";
+    font-weight: bold;
+}
+.content-r img{
+    margin-top:45px;
+    margin-bottom: 10px;
+    
+}
+.content-r h2{
+    font-size: 20px;
+    font-family: "微軟正黑體";
+    font-weight: bold;
+    
+}
+.content-j img{
+    margin-top:10.5px;
+    margin-bottom: 8px;
+    
+}
+.content-j h2{
+    font-size: 20px;
+    font-family: "微軟正黑體";
+    font-weight: bold;
+}
+.win{
+    color: #00cc99;
+}
+.difference h2{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0;
+}
+.difference table{
+    width: 80%;
+    margin: 0 10%;
+}
+.difference th,.difference td{
+    text-align: left;
+    padding: 10px;
+}
+.difference th{
+    background: #f7f7f7;
+    font-weight: bold;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.difference td{
+    border-bottom: 1px solid #dddddd;
+}
+
+.contactfield{
+    margin-top: 60px;
+    font-family:"微軟正黑體";
+    color: white;
+    font-weight: bold;
+    padding-bottom: 40px;
+    background: linear-gradient(#00654b,#009772);
+}
+.contactfield h2{
+    text-align: center;
+    font-size: 28px;
+    line-height: 40px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.contactfield label{
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 24px;
+}
+.contactfield-text{
+    width: 45%;
+    height: 250px;
+    border-radius: 5px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    float: left;
+}
+.contactfield-name{
+    text-indent: 18px;
+    height: 25px;
+    border-radius: 5px;
+    width: 45%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+
+.contactfield-tel{
+    text-indent: 18px;
+    height: 25px;
+    border-radius: 5px;
+    width: 45%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+
+.contactfield-email{
+    text-indent: 18px;
+    height: 25px;
+    border-radius: 5px;
+    width: 45%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+.contactfield-input{
+    background-color: #00cc99;
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "微軟正黑體";
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 415px;
+}
+
+
+.footer{
+    
+    padding: 20px;
+}
+
+.footer img{
+    float: left;
+}
+.footer  p{
+    font-family: "微軟正黑體";
+    margin-left: 720px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.footer  em{
+    color: red;
+}
+
+/*回到最上方*/
+.top{
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    font-size: 18px;
+    width: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: turquoise;
+    border: turquoise 5px solid;
+}
+.top:hover{
+    background: black;
+}      
+.scrolltop{
+    display: none;
+}                 
